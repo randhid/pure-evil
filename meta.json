@@ -1,0 +1,66 @@
+{
+  "module_id": "rand:pure-evil",
+  "visibility": "public",
+  "url": "https://github.com/randhid/pure-evil",
+  "description": "Good modules gone bad.",
+  "models": [
+    {
+      "api": "rdk:component:arm",
+      "model": "rand:go-evils:evil-arm"
+    },
+    {
+      "api": "rdk:component:base",
+      "model": "rand:go-evils:evil-base"
+    },
+    {
+      "api": "rdk:component:board",
+      "model": "rand:go-evils:evil-board"
+    },
+    {
+      "api": "rdk:component:camera",
+      "model": "rand:go-evils:evil-camera"
+    },
+    {
+      "api": "rdk:component:encoder",
+      "model": "rand:go-evils:evil-encoder"
+    },
+    {
+      "api": "rdk:component:gantry",
+      "model": "rand:go-evils:evil-gantry"
+    },
+    {
+      "api": "rdk:component:gripper",
+      "model": "rand:go-evils:evil-gripper"
+    },
+    {
+      "api": "rdk:component:input_controller",
+      "model": "rand:go-evils:evil-input"
+    },
+    {
+      "api": "rdk:component:motor",
+      "model": "rand:go-evils:evil-motor"
+    },
+    {
+      "api": "rdk:component:movementsensor",
+      "model": "rand:go-evils:evil-movementsensor"
+    },
+    {
+      "api": "rdk:component:powersensor",
+      "model": "rand:go-evils:evil-powersensor"
+    },
+    {
+      "api": "rdk:component:sensor",
+      "model": "rand:go-evils:evil-sensor"
+    },
+    {
+      "api": "rdk:component:servo",
+      "model": "rand:go-evils:evil-servo"
+    }
+  ],
+  "build": {
+    "path": "bin/module.tar.gz",
+    "build": "./run.sh",
+    "arch": ["linux/amd64", "linux/arm64", "darwin/arm64"]
+  },
+  "entrypoint": "evil-modules-go"
+}
